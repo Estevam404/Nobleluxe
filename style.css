@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #111111;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    margin: 10%;
+    padding: 20px;
+}
+
+header {
+    background-image:linear-gradient(rgba(231, 204, 135, 0.61), rgb(211, 196, 160),rgba(248, 235, 203, 0.219)) ;
+    color: rgba(82, 48, 5, 0.959);
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style:none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: rgba(82, 48, 5, 0.959);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
