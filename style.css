@@ -18,7 +18,7 @@ body {
 header {
     background-image:linear-gradient(rgba(231, 204, 135, 0.61), rgb(211, 196, 160),rgba(248, 235, 203, 0.219)) ;
     color: rgba(82, 48, 5, 0.959);
-    padding: 20px 0;
+    padding: 100px 0;
 }
 
 nav ul {
