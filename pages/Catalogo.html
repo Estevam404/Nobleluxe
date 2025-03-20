@@ -3,24 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
+    <title>Caálogo de Ambientes</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content:center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.item {
+    width: 400px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+@media (max-width: 1000px) {
+    .catalogo {
+        flex-direction:column; 
+        align-items: center;
+    }
+}
+.item img {
+    width: 100%; 
+    height: 250px;
+    object-fit: cover;
+}
+    </style>
 </head>
 <body>
+    <h1>Cálogo de Ambientes</h1>
+    <a href="/index.html">Home</a>
     <div class="catalogo">
         <div class="item">
             <img src="/img/kitchen.jpg" alt="Cozinha moderna">
+            <p>A cozinha dos sonhos para quem ama cozinhar! Com uma combinação harmoniosa de madeira e acabamentos claros, o espaço é funcional e aconchegante. Ideal para reunir família e amigos em momentos especiais.</p>
         </div>
         <div class="item">
             <img src="/img/kitchen_2.jpg" alt="Cozinha moderna">
+            <p>Sala de jantar moderna e elegante, com um design que equilibra elementos de madeira e tons claros. O espaço é convidativo e bem iluminado, com detalhes que conferem sofisticação e funcionalidade.</p>
         </div>
         <div class="item">
             <img src="/img/kitchendining.jpg" alt="Sala americana">
+            <p>Uma cozinha moderna e bem iluminada, com uma ilha central de madeira clara. O interior da casa é minimalista, com tons neutros e móveis de design simples, criando um ambiente espaçoso e convidativo.</p>
         </div>
         <div class="item">
             <img src="/img/roomM.jpg" alt="Sala moderna">
+            <p>Espaço meticulosamente projetado, onde a estética moderna se encontra com um toque de sofisticação sombria. O ambiente, que serve tanto como lounge quanto como copa, exala uma atmosfera convidativa e elegante, ideal para encontros sociais ou momentos de relaxamento.</p>
         </div>
         <div class="item">
             <img src="/img/desk.jpg" alt="Escritorio">
+            <p>Um espaço de home office bem planejado faz toda a diferença na produtividade. Com iluminação estratégica e móveis ergonômicos, este ambiente proporciona conforto e eficiência para o trabalho remoto.</p>
         </div>
 
     </div>
