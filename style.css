@@ -11,7 +11,7 @@ body {
 .container {
     text-align: center;
     width: 80%;
-    margin: 10%;
+    margin: 0 auto;
     padding: 20px;
 }
 
@@ -24,6 +24,9 @@ header {
 nav ul {
     list-style:none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px
 }
 
 nav ul li {
@@ -35,6 +38,11 @@ nav ul li a {
     color: rgba(82, 48, 5, 0.959);
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #a08c75;
 }
 
 
