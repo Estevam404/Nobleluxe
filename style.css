@@ -30,7 +30,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #5C4033;
     margin-bottom: 10px;
     
@@ -49,7 +49,6 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 40px
-    
 }
 
 nav ul li {
@@ -64,14 +63,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #a08c75;
+    color: #6B8A73;
 }
 
 .btn {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background-color: #6B8A73; /* Verde Musgo */
+    background-color: #6B8A73; 
     color: white;
     font-weight: bold;
     border: none;
@@ -82,7 +81,15 @@ nav ul li a:hover {
 .btn:hover {
     background-color: #5C4033; /* Marrom Café */
 }
+.hero {
+    background: linear-gradient(135deg, #F8F8F8 60%, #D6CBB3 100%);
+    padding: 80px 20px;
+    text-align: center;
+}
 
+.hero h2 .highlight {
+    color: #6B8A73; /* Verde Musgo */
+}
 /* Rodapé */
 footer {
     background-color: #5C4033; /* Marrom Café */
