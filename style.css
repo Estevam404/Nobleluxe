@@ -23,17 +23,18 @@ header {
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color: #5c4033;
-    letter-spacing: 2px;
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--cafe);
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.15);
 }
 
 h2 {
     font-size: 2.5rem;
-    color: #5C4033;
-    margin-bottom: 10px;
-    
+    color: var(--cafe);
+    text-transform: uppercase;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 p {
@@ -63,7 +64,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #6B8A73;
+    color: #6b8a7359;
 }
 
 .btn {
@@ -71,7 +72,7 @@ nav ul li a:hover {
     margin-top: 20px;
     padding: 12px 25px;
     background-color: #6B8A73; 
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     border: none;
     border-radius: 6px;
@@ -82,8 +83,7 @@ nav ul li a:hover {
     background-color: #5C4033; /* Marrom Café */
 }
 .hero {
-    background: linear-gradient(135deg, #F8F8F8 60%, #D6CBB3 100%);
-    padding: 80px 20px;
+    background: linear-gradient(to bottom, #F8F8F8 70%, #D6CBB3 60%);
     text-align: center;
 }
 
@@ -92,16 +92,28 @@ nav ul li a:hover {
 }
 /* Rodapé */
 footer {
-    background-color: #5C4033; /* Marrom Café */
-    color: #F8F8F8; /* Branco Gelo */
+    background-color: #333333; /* Marrom Café */
+    color: #f8f8f88a; /* Branco Gelo */
     padding: 20px 0;
     text-align: center;
     margin-top: 40px;
     font-size: 0.9rem;
 }
-
-
-
-
-
-
+body {
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+}
+main {
+    flex: 1;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
