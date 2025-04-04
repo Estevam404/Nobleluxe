@@ -16,11 +16,11 @@ body {
 }
 
 header {
-    background-color: #D6CBB3;
+    background: linear-gradient(to right, #927944, #90887d);
     color: rgba(82, 48, 5, 0.959);
     padding: 60px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+  }
 
 h1 {
     font-size: 4rem;
@@ -59,14 +59,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color:#333333;;
+    color:#f2dfb9;;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #6b8a7359;
+    color: #f0b60959;
 }
 
 .btn {
