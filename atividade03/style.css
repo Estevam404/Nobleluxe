@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f6f6f6;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+    padding: 40px 20px;
+  }
+  
+  .topo {
+    background: linear-gradient(to right, #D6CBB3, #b09763);
+    text-align: center;
+    padding: 60px 0;
+  }
+  
+  .topo h1 {
+    color: #5C4033;
+    font-family: 'Georgia', serif;
+    font-size: 3em;
+  }
+  
+  nav {
+    margin-top: 10px;
+
+  }
+  
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 12px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #6B8A73;
+  }
+  
+  .boas-vindas {
+    text-align: center;
+    margin-top: 60px;
+
+  }
+  
+  .boas-vindas h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #5C4033;
+  }
+  
+  .boas-vindas p {
+    font-size: 1.2em;
+    color: #6B8A73;
+
+  }
+  
+  section.formulario {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #6b8a732d;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+  
+  legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #5C4033;
+    font-size: 1.1em;
+  }
+  
+  .campo {
+    margin-bottom: 20px;
+  }
+  
+  .campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .campo input[type="text"],
+  .campo input[type="email"],
+  .campo input[type="tel"],
+  .campo input[type="date"],
+  .campo input[type="number"],
+  .campo select,
+  .campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 1em;
+  }
+  
+  .campo textarea {
+    resize: vertical;
+  }
+  
+  .campo input[type="radio"],
+  .campo input[type="checkbox"] {
+    margin-right: 8px;
+    margin-top: 8px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    background-color: #6B8A73;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #4f6a59;
+  }
+  
+  .rodape {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+  }
+  

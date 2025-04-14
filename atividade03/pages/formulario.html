@@ -1,24 +1,175 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orçamento</title>
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçamento</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <div class="topo">
-        <header>
-            <h1>Solicite seu Projeto Personalizado</h1>
-            <nav>
-                <a href="/atividade03/index.html">Home</a>
-            </nav>
-        </header>
-    </div>
-    <main class="conteudo">
-        <section class="formulario">
-            
-        </section>
-    </main>
+  <div class="topo">
+    <header>
+      <h1>Solicite seu Projeto Personalizado</h1>
+      <nav>
+        <a href="/atividade03/index.html">Home</a>
+      </nav>
+    </header>
+  </div>
+
+  <main class="conteudo">
+    <section class="formulario">
+      <form action="#">
+        <fieldset>
+          <legend><strong>Informações do cliente</strong></legend>
+          <div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+          </div>
+          <div class="campo">
+            <label for="email">e-mail</label>
+            <input type="email" id="email" placeholder="noblelux@email.com" required>
+          </div>
+          <div class="campo">
+            <label for="tel">Número de contato</label>
+            <input type="tel" id="tel" placeholder="(DDD) 0 0000-0000" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><strong>Detalhes do Projeto</strong></legend>
+
+          <div class="campo">
+            <label for="ambiente">Tipo de ambiente</label>
+            <select name="ambiente" id="ambiente" required>
+              <option value="">Selecione</option>
+              <option value="Sala">Sala</option>
+              <option value="Cozinha">Cozinha</option>
+              <option value="Escritório">Escritório</option>
+              <option value="Banheiro">Banheiro</option>
+              <option value="Quarto">Quarto</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="metragem">Metragem aproximada</label>
+            <select name="metragem" id="metragem" required>
+              <option value="">Selecione</option>
+              <option value="ate20">Até 20m²</option>
+              <option value="21a50">21 a 50m²</option>
+              <option value="51a100">51 a 100m²</option>
+              <option value="mais100">Mais de 100m²</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="estado">Estado</label>
+            <select id="estado" name="estado" required>
+              <option value="">Selecione</option>
+              <option value="AC">Acre - AC</option>
+              <option value="AL">Alagoas - AL</option>
+              <option value="AP">Amapá - AP</option>
+              <option value="AM">Amazonas - AM</option>
+              <option value="BA">Bahia - BA</option>
+              <option value="CE">Ceará - CE</option>
+              <option value="DF">Distrito Federal - DF</option>
+              <option value="ES">Espírito Santo - ES</option>
+              <option value="GO">Goiás - GO</option>
+              <option value="MA">Maranhão - MA</option>
+              <option value="MT">Mato Grosso - MT</option>
+              <option value="MS">Mato Grosso do Sul - MS</option>
+              <option value="MG">Minas Gerais - MG</option>
+              <option value="PA">Pará - PA</option>
+              <option value="PB">Paraíba - PB</option>
+              <option value="PR">Paraná - PR</option>
+              <option value="PE">Pernambuco - PE</option>
+              <option value="PI">Piauí - PI</option>
+              <option value="RJ">Rio de Janeiro - RJ</option>
+              <option value="RN">Rio Grande do Norte - RN</option>
+              <option value="RS">Rio Grande do Sul - RS</option>
+              <option value="RO">Rondônia - RO</option>
+              <option value="RR">Roraima - RR</option>
+              <option value="SC">Santa Catarina - SC</option>
+              <option value="SP">São Paulo - SP</option>
+              <option value="SE">Sergipe - SE</option>
+              <option value="TO">Tocantins - TO</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label><strong>Estilo preferido</strong></label><br>
+            <input type="radio" id="moderno" name="estilo" value="Moderno">
+            <label for="moderno">Moderno</label><br>
+
+            <input type="radio" id="rustico" name="estilo" value="Rústico">
+            <label for="rustico">Rústico</label><br>
+
+            <input type="radio" id="industrial" name="estilo" value="Industrial">
+            <label for="industrial">Industrial</label><br>
+
+            <input type="radio" id="classico" name="estilo" value="Clássico">
+            <label for="classico">Clássico</label><br>
+
+            <input type="radio" id="escandiavo" name="estilo" value="Escandiavo">
+            <label for="escandiavo">Escandiavo</label><br>
+          </div>
+
+          <div class="campo">
+            <label for="datainicio"><strong>Data de Início</strong></label>
+            <input type="date" id="datainicio" name="datainicio" required>
+          </div>
+
+          <div class="campo">
+            <label><strong>Incluir eletrodomésticos?</strong></label><br>
+            <input type="radio" id="eletrosSim" name="eletros" value="Sim" required>
+            <label for="eletrosSim">Sim</label><br>
+
+            <input type="radio" id="eletrosNao" name="eletros" value="Não">
+            <label for="eletrosNao">Não</label><br>
+          </div>
+
+          <div class="campo">
+            <label for="orcamento">Orçamento estimado (R$)</label>
+            <input type="number" id="orcamento" name="orcamento" placeholder="Ex: 5000" min="0" step="100" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><strong>Informações adicionais</strong></legend>
+
+          <div class="campo">
+            <label for="descricao">Descrição detalhada</label><br>
+            <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva aqui seu projeto com mais detalhes..." required></textarea>
+          </div>
+
+          <div class="campo">
+            <label for="comoConheceu">Como conheceu a empresa?</label>
+            <select id="comoConheceu" name="comoConheceu" required>
+              <option value="">Selecione</option>
+              <option value="Google">Google</option>
+              <option value="Instagram">Instagram</option>
+              <option value="Indicação">Indicação</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <input type="checkbox" id="whatsapp" name="whatsapp" value="Autorizado">
+            <label for="whatsapp">Autorizo contato via WhatsApp</label>
+          </div>
+
+          <div class="campo">
+            <input type="checkbox" id="newsletter" name="newsletter" value="Sim">
+            <label for="newsletter">Quero receber novidades e promoções por e-mail</label>
+          </div>
+        </fieldset>
+
+        <div class="campo">
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </div>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
