@@ -22,41 +22,70 @@
   
   .topo h1 {
     font-family: 'Merriweather', serif;
-    font-size: 2.2rem;
+    font-size: 5em;
     color: #5c4033;
-    margin-bottom: 5px;
+    margin: 0;
+    padding: 10px 0;
+  }
+  .topo nav a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: #5C4033;
+    margin: 0 18px;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.3s ease;
   }
   
-  .topo nav a {
-    color: #333;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
+  .topo nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #F2A649;
+    transition: 0.3s;
+  }
+  
+  .topo nav a:hover::after {
+    width: 100%;
   }
   
   .topo nav a:hover {
-    color: #401201;
+    color: #6b8a73;
   }
   
   main {
-    padding: 30px 20px;
-    min-height: 70vh;
+    padding: 60px 20px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .hero-bg {
-    background-color: #f8f8f8;
-    padding: 40px 20px;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
   
   .hero-bg h2 {
-    color: #5c4033;
     font-family: 'Merriweather', serif;
-    font-size: 1.8rem;
+    font-size: 2.5em;
+    color: #401201;
     margin-bottom: 10px;
   }
   
   .hero-bg p {
-    color: #6b8a73;
+    color: #3f5f47;
+    font-size: 1.1em;
+    margin-bottom: 25px;
   }
   
   .btn {
@@ -159,9 +188,150 @@
   button[type="reset"]:hover {
     background-color: #401201;
   }
+  .sobre-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #401201;
+  }
+  
+  .sobre-container section {
+    flex: 1 1 300px;
+    min-width: 280px;
+  }
+  
+  .sobre-container h2 {
+    font-family: 'Merriweather', serif;
+    color: #5c4033;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  .sobre-container p,
+  .sobre-container li {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .sobre-container ul {
+    padding-left: 20px;
+    list-style: none;
+  }
+  
+  .sobre-container li {
+    margin-bottom: 10px;
+  }
+  
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .galeria img {
+    width: calc(33.333% - 13.333px);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tabelas-informacoes {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .tabelas-informacoes h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8em;
+    color: #401201;
+    margin: 40px 0 20px;
+  }
+  
+  .tabelas-informacoes table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: #fffaf5;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .tabelas-informacoes th,
+  .tabelas-informacoes td {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 1.05em;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tabelas-informacoes th {
+    background-color: #f2a649;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .tabelas-informacoes tbody tr:hover {
+    background-color: #f8f8f8;
+  }
+  
+  .color-box {
+    width: 32px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    padding: 60px 40px;
+    background-color: #fdfaf5;
+  }
+  
+  .catalogo-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .catalogo-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .catalogo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .catalogo-item p {
+    padding: 0 20px;
+    margin: 10px 0;
+    color: #333;
+    text-align: justify;
+    font-size: 1em;
+  }
+  
+  .catalogo-item small {
+    display: block;
+    padding: 0 20px 20px;
+    color: #777;
+    font-size: 0.85em;
+  }
   
   footer {
-    background-color: #624f4a;
+    background-color: #5c4033;
     color: #fff;
     padding: 30px 20px;
   }
