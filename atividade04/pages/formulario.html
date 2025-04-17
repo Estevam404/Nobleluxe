@@ -21,7 +21,7 @@
   </div>
 
   <main class="conteudo">
-    
+
     <section class="intro-formulario">
       <h2>Solicite seu Projeto Personalizado</h2>
       <p>Preencha as informações abaixo para receber um orçamento exclusivo!</p>
@@ -31,13 +31,15 @@
       <form action="#" method="post">
         <fieldset>
           <legend><strong>Informações do cliente</strong></legend>
-          <div class="campo">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" placeholder="Digite seu nome completo" required>
-          </div>
-          <div class="campo">
-            <label for="email">e-mail</label>
-            <input type="email" id="email" placeholder="noblelux@email.com" required>
+          <div class="duplo">
+            <div class="campo">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+            </div>
+            <div class="campo">
+              <label for="email">e-mail</label>
+              <input type="email" id="email" placeholder="noblelux@email.com" required>
+            </div>
           </div>
           <div class="campo">
             <label for="tel">Número de contato</label>
@@ -48,28 +50,29 @@
         <fieldset>
           <legend><strong>Detalhes do Projeto</strong></legend>
 
-          <div class="campo">
-            <label for="ambiente">Tipo de ambiente</label>
-            <select name="ambiente" id="ambiente" required>
-              <option value="">Selecione</option>
-              <option value="Sala">Sala</option>
-              <option value="Cozinha">Cozinha</option>
-              <option value="Escritório">Escritório</option>
-              <option value="Banheiro">Banheiro</option>
-              <option value="Quarto">Quarto</option>
-              <option value="Outro">Outro</option>
-            </select>
-          </div>
-
-          <div class="campo">
-            <label for="metragem">Metragem aproximada</label>
-            <select name="metragem" id="metragem" required>
-              <option value="">Selecione</option>
-              <option value="ate20">Até 20m²</option>
-              <option value="21a50">21 a 50m²</option>
-              <option value="51a100">51 a 100m²</option>
-              <option value="mais100">Mais de 100m²</option>
-            </select>
+          <div class="duplo">
+            <div class="campo">
+              <label for="ambiente">Tipo de ambiente</label>
+              <select name="ambiente" id="ambiente" required>
+                <option value="">Selecione</option>
+                <option value="Sala">Sala</option>
+                <option value="Cozinha">Cozinha</option>
+                <option value="Escritório">Escritório</option>
+                <option value="Banheiro">Banheiro</option>
+                <option value="Quarto">Quarto</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="metragem">Metragem aproximada</label>
+              <select name="metragem" id="metragem" required>
+                <option value="">Selecione</option>
+                <option value="ate20">Até 20m²</option>
+                <option value="21a50">21 a 50m²</option>
+                <option value="51a100">51 a 100m²</option>
+                <option value="mais100">Mais de 100m²</option>
+              </select>
+            </div>
           </div>
 
           <div class="campo">
@@ -108,20 +111,18 @@
 
           <div class="campo">
             <label><strong>Estilo preferido</strong></label><br>
-            <input type="radio" id="moderno" name="estilo" value="Moderno">
-            <label for="moderno">Moderno</label><br>
-
-            <input type="radio" id="rustico" name="estilo" value="Rústico">
-            <label for="rustico">Rústico</label><br>
-
-            <input type="radio" id="industrial" name="estilo" value="Industrial">
-            <label for="industrial">Industrial</label><br>
-
-            <input type="radio" id="classico" name="estilo" value="Clássico">
-            <label for="classico">Clássico</label><br>
-
-            <input type="radio" id="escandiavo" name="estilo" value="Escandiavo">
-            <label for="escandiavo">Escandiavo</label><br>
+            <div class="radio-group">
+              <input type="radio" id="moderno" name="estilo" value="Moderno">
+              <label for="moderno">Moderno</label><br>
+              <input type="radio" id="rustico" name="estilo" value="Rústico">
+              <label for="rustico">Rústico</label><br>
+              <input type="radio" id="industrial" name="estilo" value="Industrial">
+              <label for="industrial">Industrial</label><br>
+              <input type="radio" id="classico" name="estilo" value="Clássico">
+              <label for="classico">Clássico</label><br>
+              <input type="radio" id="escandiavo" name="estilo" value="Escandiavo">
+              <label for="escandiavo">Escandiavo</label><br>
+            </div>
           </div>
 
           <div class="campo">
@@ -131,11 +132,12 @@
 
           <div class="campo">
             <label><strong>Incluir eletrodomésticos?</strong></label><br>
-            <input type="radio" id="eletrosSim" name="eletros" value="Sim" required>
-            <label for="eletrosSim">Sim</label><br>
-
-            <input type="radio" id="eletrosNao" name="eletros" value="Não">
-            <label for="eletrosNao">Não</label><br>
+            <div class="radio-group">
+              <input type="radio" id="eletrosSim" name="eletros" value="Sim" required>
+              <label for="eletrosSim">Sim</label><br>
+              <input type="radio" id="eletrosNao" name="eletros" value="Não">
+              <label for="eletrosNao">Não</label><br>
+            </div>
           </div>
 
           <div class="campo">
@@ -163,20 +165,27 @@
             </select>
           </div>
 
-          <div class="campo">
-            <input type="checkbox" id="whatsapp" name="whatsapp" value="Autorizado">
-            <label for="whatsapp">Autorizo contato via WhatsApp</label>
-          </div>
-
-          <div class="campo">
-            <input type="checkbox" id="newsletter" name="newsletter" value="Sim">
-            <label for="newsletter">Quero receber novidades e promoções por e-mail</label>
+          <div class="duplo">
+            <div class="campo">
+              <div class="checkbox-group">
+                <input type="checkbox" id="whatsapp" name="whatsapp" value="Autorizado">
+                <label for="whatsapp">Autorizo contato via WhatsApp</label>
+              </div>
+            </div>
+            <div class="campo">
+              <div class="checkbox-group">
+                <input type="checkbox" id="newsletter" name="newsletter" value="Sim">
+                <label for="newsletter">Quero receber novidades e promoções por e-mail</label>
+              </div>
+            </div>
           </div>
         </fieldset>
 
-        <div class="campo">
-          <button type="submit">Enviar</button>
-          <button type="reset">Limpar</button>
+        <div class="duplo">
+          <div class="campo">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+          </div>
         </div>
       </form>
     </section>
