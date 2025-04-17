@@ -59,13 +59,70 @@
     color: #6b8a73;
   }
   
-  main {
+  .main-index {
     padding: 60px 20px;
-    min-height: 80vh;
+    min-height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('/atividade04/img/sob-medida.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
+  .sobre-container {
+    padding: 60px 20px;
+    min-height: 700px;
+    background-image: url('/atividade04/img/sua-imagem-sobre.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-dicas {
+  padding: 60px 20px;
+  min-height: 700px;
+  background-image: url('https://finger.ind.br/wp-content/uploads/2020/04/6-tipos-de-iluminacao-para-considerar-na-hora-de-fazer-seu-projeto-3-1024x683.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-dicas {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: center;
+}
+
+.container-dicas h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.5em;
+  color: #5c4033;
+  margin-bottom: 20px;
+}
+
+.container-dicas ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.container-dicas ul li {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.container-dicas p {
+  font-size: 1em;
+  color: #6b8a73;
+}
+
   
   .hero-bg {
     background-color: #f9f9f9;
@@ -396,3 +453,67 @@
     transform: scale(1.1);
     opacity: 0.8;
   }
+  .intro-trabalhe {
+    text-align: center;
+    font-size: 1.4em;
+    color: #5c4033;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+.form-trabalhe {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(170, 124, 78, 0.586));
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-trabalhe fieldset {
+    border: none;
+}
+
+.form-trabalhe legend {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #5c4033;
+    text-align: center;
+}
+
+.form-trabalhe .campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-trabalhe label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-trabalhe input,
+.form-trabalhe select,
+.form-trabalhe textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+.form-trabalhe button {
+    background-color: #5c4033;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.form-trabalhe button:hover {
+    background-color: #401201;
+}
