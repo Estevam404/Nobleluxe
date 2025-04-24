@@ -511,7 +511,7 @@ textarea {
   }
   
   footer h4 {
-    font-family: 'Merriweather', serif;
+    font-family: "Winky Rough", sans-serif;
     color: #6b8a73;
     margin-bottom: 18px;
   }
@@ -527,7 +527,7 @@ textarea {
   footer ul li a {
     text-decoration: none;
     color: #fff;
-    transition: color 0.3s ease;
+    transition: color 0.4s ease;
   }
 
   footer ul li a:hover {
