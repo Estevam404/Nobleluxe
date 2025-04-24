@@ -15,13 +15,14 @@
   }
   
   .topo {
+
     background: linear-gradient(to right, #d6cbb3, #a79060);
     padding: 100px 0;
     text-align: center;
   }
   
   .topo h1 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Cinzel', serif;
     font-size: 4em;
     color: #5c4033;
     margin: 0;
