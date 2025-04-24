@@ -169,8 +169,15 @@
   color: #6b8a73;
 }
 
+.destaque {
+  font-family: "Playwrite AU SA", cursive;
+  color: #D98F4E;
+  font-weight: 800;
+  font-style: normal;
+}
+
   
-  .destaque-bg {
+.destaque-bg {
     background-color: rgba(255, 255, 255, 0.85);
     padding: 40px;
     border-radius: 12px;
@@ -178,7 +185,7 @@
     text-align: center;
   }
   
-  .destaque-bg h2 {
+.destaque-bg h2 {
     font-family: 'Merriweather', serif;
     font-size: 2.5em;
     color: #5c4033;
@@ -186,12 +193,14 @@
   }
   
   .destaque-bg p {
+    font-family: "Winky Rough", sans-serif;
     color: #6b8a73;
     font-size: 1.2em;
     margin-bottom: 25px;
   }
   
   .btn {
+    font-family: "Winky Rough", sans-serif;
     background-color: #5c4033;
     color: white;
     padding: 10px 20px;
