@@ -158,7 +158,7 @@
 }
 
   
-  .hero-bg {
+  .destaque-bg {
     background-color: rgba(255, 255, 255, 0.85);
     padding: 40px;
     border-radius: 12px;
@@ -166,14 +166,14 @@
     text-align: center;
   }
   
-  .hero-bg h2 {
+  .destaque-bg h2 {
     font-family: 'Merriweather', serif;
     font-size: 2.5em;
     color: #5c4033;
     margin-bottom: 10px;
   }
   
-  .hero-bg p {
+  .destaque-bg p {
     color: #6b8a73;
     font-size: 1.2em;
     margin-bottom: 25px;
